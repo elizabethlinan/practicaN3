@@ -11,18 +11,8 @@
 <title>Elizabeth Liñan </title>
 </head>
 <body>
-
 <div class="container">
 <h1>Registra Plato</h1>
-
-	<c:if test="${sessionScope.MENSAJE != null}">
-		<div class="alert alert-success fade in" id="success-alert">
-		 <a href="#" class="close" data-dismiss="alert">&times;</a>
-		 <strong>${sessionScope.MENSAJE}</strong>
-		</div>
-	</c:if>
-	<c:remove var="MENSAJE" />
-
 	<form action="registraPlato" id="id_form" method="post"> 
 			<input type="hidden" name="metodo" value="registra">	
 			<div class="form-group">
